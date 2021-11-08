@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Pet</title>
+  </head>
+  <body>
+<form><br>
+Enter your Pet Name: <input type="text" id="name"/><br><br>
+How old is your pet? <input type="text" id="pet_age"/><br><br>
+Is your pet hungry: <input type="text" id="hungry_answer"/><br><br>
+What your pet likes to eat: <input type="text" id="food" /><br><br>
+
+<input type="submit" value="Submit" onclick="mydata()"/><br>
+</form>
+
+    <script type="text/javascript">
+	
+
+function mydata() 
+{
+var name= document.getElementById("name").value;
+var pet_age = document.getElementById("pet_age").value;
+  var food = document.getElementById("food").value;
+//document.writeln("<h1>Thanks</h1><br>");
+document.writeln("Thank you for completing this form.<br><br>");
+
+document.writeln(" Name is " + name + "<br>");
+document.writeln(" Age is " + pet_age + "<br>");
+document.writeln(" Pet hungry? " + hungry_answer);
+document.writeln(" Pet likes to eat " + food);
+}
+    </script>
+
+  </body>
+</html>
